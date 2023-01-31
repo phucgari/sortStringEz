@@ -14,7 +14,7 @@ public class Main {
         return input;
     }
 
-    public static String takeCharsWithOrder(String string,int index) {
+    public static String takeCharsWithOrderAtIndex(String string, int index) {
         String result=string.charAt(0)+"";
         int counter=0;
         for (int i = index; i < string.length()-1; i++) {
@@ -30,7 +30,7 @@ public class Main {
         int max=0;
         String result="";
         for (int i = 0; i < input.length(); i++) {
-            String temp=takeCharsWithOrder(input,i);
+            String temp= takeCharsWithOrderAtIndex(input,i);
             if (temp.length()>max){
                 result=temp;
                 max=result.length();

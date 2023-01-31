@@ -6,9 +6,9 @@ class MainTest {
     String demo="demo";
     @Test
     void testTakeCharsWithOrder(){
-        assertEquals("demo",Main.takeCharsWithOrder(demo,0));
+        assertEquals("demo",Main.takeCharsWithOrderAtIndex(demo,0));
         demo="test";
-        assertEquals("t",Main.takeCharsWithOrder(demo,0));
+        assertEquals("t",Main.takeCharsWithOrderAtIndex(demo,0));
     }
     @Test
     void testTakeCharsWithOrderMaxLength(){
